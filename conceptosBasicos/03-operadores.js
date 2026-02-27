@@ -3,18 +3,18 @@
 let a = 5
 let b = 10
 
-/*console.log(a + b) // Suma
+console.log(a + b) // Suma
 console.log(a - b) // Resta
 console.log(a * b) // Multiplicación
 console.log(a / b) // División
 
 console.log(a % b) // Módulo
-console.log(a ** b) // Exponente*/
+console.log(a ** b) // Exponente
 
 
 // Operadores unarios
 
-/*/ Post-incremento: usa el valor (5) y LUEGO lo incrementa (a=6)
+//Post-incremento: usa el valor (5) y LUEGO lo incrementa (a=6)
 console.log(a++); // Muestra: 5 
 console.log(a) // Muestra: 6
 
@@ -47,16 +47,24 @@ console.log(myVariable)
 myVariable **= 4 // Exponente con asignación
 console.log(myVariable)
 
+// Operadores de comparación
 
-/*
-Truthy values (valores verdaderos)
+console.log(5 > 10) // Mayor que
+console.log(5 < 10) // Menor que
+console.log(5 >= 10) // Mayor o igual que
+console.log(5 <= 10) // Menor o igual que
+console.log(5 == "5") // Igualdad (compara solo el valor)
+console.log(5 === "5") // Estrictamente igual (compara valor y tipo)
+console.log(5 != "5") // Desigualdad (compara solo el valor)
+console.log(5 !== "5") // Estrictamente desigual (compara valor y tipo)
+
+/* Truthy values (valores verdaderos)
 
 - Todos los numeros positivos y negativos menos el cero
 - Todas las cadenas de texto menos las vacías
 - El boolean true
-*/
 
-/*
+
 Falsy values (valores falsos)
 
 - 0
@@ -81,7 +89,6 @@ console.log(5 > 10 || 15 > 20)
 console.log(5 < 10 || 15 < 20)
 console.log(5 < 10 || 15 > 20)
 console.log(5 > 10 || 15 > 20 || 30 > 40)
-
 console.log(5 > 10 && 15 > 20 || 30 < 40)
 
 // not (!)
@@ -90,30 +97,8 @@ console.log(!false)
 console.log(!(5 > 10 && 15 > 20))
 console.log(!(5 > 10 || 15 > 20))
 
-// Operadores ternarios
+// Operador ternarios
 
 const isRaining = false
 isRaining ? console.log("Está lloviendo") : console.log("No está lloviendo") 
 
-/* Ejercicios
-
-1. Crea una variable para cada operación aritmética
-
-2. Crea una variable para cada tipo de operación de asignación,
-    que haga uso de las variables utilizadas para las operaciones aritméticas
-
-3. Imprime 5 comparaciones verdaderas con diferentes operadores de comparación
-
-4. Imprime 5 comparaciones falsas con diferentes operadores de comparación
-
-5. Utiliza el operador lógico and
-
-6. Utiliza el operador lógico or
-
-7. Combina ambos operadores lógicos
-
-8. Añade alguna negación
-
-9. Utiliza el operador ternario
-
-10. Combina operadores aritméticos, de comparáción y lógicas */

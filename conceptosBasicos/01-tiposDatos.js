@@ -1,3 +1,4 @@
+
 // Cadenas de texto (string)
 let myName = "Diego Giraldo"
 let alias = 'DonDiego'
@@ -20,15 +21,16 @@ let nullValue = null
 
 // Symbol
 
-//let mySymbol = Symbol("mysymbol")
+let mySymbol = Symbol("mysymbol")
 
-// BigInt
+/* BigInt. Tenemos dos formas de declarar un BigInt, 
+usando la función BigInt() o agregando una "n" al final del número.*/
 
 let myBigInt = BigInt(817239871289371986589716389471628379612983761289376129)
 let myBigInt2 = 817239871289371986589716389471628379612983761289376129n
 
 
-// Mostramos los tipos de datos
+// Así mostramos los tipos de datos
 console.log(typeof myName)
 console.log(typeof alias)
 console.log(typeof email)

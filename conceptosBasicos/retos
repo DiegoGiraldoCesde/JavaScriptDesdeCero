@@ -1,0 +1,19 @@
+Reto 1
+
+   1 Use el operador ternario para dar la bienvenida a alguien si esta  logueado al sistema o pedirle que se loguee.
+
+   2 Compruebe con operaciones logicas si una persona puede entrar a una función de cine donde:
+        1 debe tener boleta
+        2 deber ser mayor de edad (por la clasiicación de la pelicula).
+
+preguntese:
+    Que variables debo crear o que constantes?
+    que debo evaluar y que operadores debo usar?
+    Que mensajes debo darle al usuario?
+
+ahora haga el mismo ejercicio usando con if
+
+   3 switch
+    dependiendo del numero del mes (1 a 12) indique en que mes nos encontramos.
+
+Reto 2
