@@ -1,4 +1,47 @@
-Reto 1
+Reto 1 "Calculadora de Perfil de Gimnasio"
+
+Crea un script que almacene la información de un usuario y calcule su Índice de Masa Corporal (IMC).
+Instrucciones:
+Almacena la información del usuario:
+Crea una variable const para el nombre del usuario.
+Crea una variable let para la edad del usuario.
+Crea una variable const para el peso del usuario en kilogramos (ej. 70).
+Crea una variable const para la altura del usuario en metros (ej. 1.75).
+
+Calcula el IMC:
+La fórmula del IMC es: peso / (altura * altura).
+Puedes usar el operador ** para elevar al cuadrado: peso / (altura ** 2).
+Guarda el resultado en una const llamada imc.
+Calcula el estado (lógica):
+Crea una variable let llamada esMayorDeEdad y usa un operador de comparación para que guarde true o false si la edad es mayor o igual a 18.
+
+Muestra el Reporte:
+Imprime en la consola un reporte completo usando console.log() y template literals, que se vea así:
+
+--- Reporte de Usuario ---
+Nombre: [Nombre del usuario]
+Edad: [Edad del usuario]
+¿Es mayor de edad?: [true/false]
+--- Reporte de Salud ---
+Peso: [Peso] kg
+Altura: [Altura] m
+IMC: [Resultado del IMC]
+
+
+Reto 2 "Conversor de Temperatura"
+
+Convertir una temperatura de grados Celsius a Fahrenheit.
+
+Paso a paso para el estudiante:
+
+La fórmula para convertir Celsius (C) a Fahrenheit (F) es: (C * 9/5) + 32.
+Crea una variable const llamada tempCelsius y asígnale un valor (ej. 25).
+Crea una variable const llamada tempFahrenheit.
+Usa los operadores aritméticos para aplicar la fórmula y guardar el resultado en tempFahrenheit. (Recuerda el orden de las operaciones: * y / se hacen antes que +).
+Muestra el resultado en la consola con un mensaje claro, por ejemplo: "25°C equivalen a 77°F."
+
+
+Reto 3
 
    1 Use el operador ternario para dar la bienvenida a alguien si esta  logueado al sistema o pedirle que se loguee.
 
@@ -13,7 +56,6 @@ preguntese:
 
 ahora haga el mismo ejercicio usando con if
 
-   3 switch
+Reto 3 switch
     dependiendo del numero del mes (1 a 12) indique en que mes nos encontramos.
 
-Reto 2
