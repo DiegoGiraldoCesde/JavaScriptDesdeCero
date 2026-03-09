@@ -1,36 +1,41 @@
-/* Funciones
-Las funciones son bloques de código reutilizables que realizan una tarea específica. Pueden aceptar parámetros y devolver valores. Las funciones pueden ser declaradas de varias formas, incluyendo funciones tradicionales, funciones anónimas y funciones flecha.
+///Funciones
+//Las funciones son bloques de código reutilizables que realizan una tarea específica. Pueden aceptar parámetros y devolver valores. Las funciones pueden ser declaradas de varias formas, incluyendo funciones tradicionales, funciones anónimas y funciones flecha.
 
-// Función tradicional */
+// Función tradicional 
 
-function funcionSaludo() {
-    console.log("¡Hola, función!\n")
+/*function funcionSaludo() {
+    console.log(`¡Hola!`)
 }
 
+funcionSaludo("diego")
+/*
 
-for (let i = 0; i < 5; i++) {
+
+/*for (let i = 0; i < 5; i++) {
     funcionSaludo()
 }
+
 
 
 let despedir = function() {
   console.log("Chaolin!!")
 };
 
+funcionSaludo()
 despedir()
 
 
 // Con parámetros
 
-function funcionConParametros(name) {
-    console.log(`¡Hola, ${name}!`)
+function funcionConParametros(name="usuario", apellido="desconocido") {
+    console.log(`¡Hola, ${name} ${apellido}!`)
 }
 
-funcionConParametros("Diego")
-funcionConParametros("Don Diego")
+funcionConParametros("Diego", "Giraldo")
+//funcionConParametros("Don Diego", "Giraldo")
 
 
-function suma(a, b) {
+function suma(a=0, b=0) {
     console.log(a + b)
 }
 
@@ -40,6 +45,8 @@ suma(30, 10)
 suma(5)
 suma()
 
+
+/*
 // Funciones anónimas
 
 const miFunc2 = function (name) {
@@ -59,10 +66,10 @@ const miFunc4 = (name) => console.log(`¡Hola, ${name}!`)
 
 miFunc3("Diego Giraldo")
 miFunc4("Diego Giraldo")
-
+*/
 // Funciones que devuelven valores
 
-let sumar = function(a=0, b=0) {
+/*let sumar = function(a=0, b=0) {
   return a + b; // devuelve un valor
 };
 
@@ -75,25 +82,28 @@ let squaredNum = (function(n) {
   return n * n
 })(10)
 
-console.log(squaredNum)
+console.log(squaredNum)*/
 
 
 //Repaso funciones 
 
-
+/*
 function mostrar() {
- console.log("Hola");
+ return "Hola";
 }
 
 let dato = mostrar();
-document.write(dato);
+console.log(dato);*/
+
 
 
 //ejemplo sin return
 
-function cuadrado(num) {
-    document.write(num * num + "<br>");
+/*function cuadrado(num) {
+    console.log(`El cuadrado de ${num} es ${num * num}`);
 }
+
+cuadrado(4);
 
 //con return
 
@@ -101,18 +111,18 @@ function cuadrado(num) {
     return num * num;
 }
 
-let r = cuadrado(4);
+let r = cuadrado(2);
 
-cuadrado(4);
+
 console.log(r);
 
 
+
+*/
 //## función flecha ##
 
-const greetings = (name = 'Diego') => {
-  let message = name + ', welcome to 30 Days Of JavaScript!'
-  return message
-}
+const greetings = (name = 'Diego') => `Hello, ${name}!`
 
-console.log(greetings())
-console.log(greetings('Diego Giraldo'))
+
+console.log(greetings("Luisa"))
+//console.log(greetings('Diego Giraldo')) 

@@ -1,43 +1,10 @@
 
 let nombres = ["Ana", "Luis", "Pedro"];
 
-/*document.write("Lista original: " + nombres + "<br>");
+console.log(`Lista original: ${nombres}`);
 
-// Agregar
-nombres.push("María");
-document.write("Después de agregar: " + nombres + "<br>");
-
-// Eliminar último
-nombres.pop();
-document.write("Después de eliminar: " + nombres + "<br>");
-
-// Cambiar valor
-nombres[1] = "Carlos";
-document.write("Después de cambiar: " + nombres + "<br>");
-
-// Mostrar uno
-document.write("Primer nombre: " + nombres[0] + "<br>");*/
-
-/////////////////////////////////////////////////
-
-//### Operaciones básicas con arrays###
-
-//Tamaño
-
-document.write(nombres.length);
-
-// Recorrer con for
-for (let i = 0; i < nombres.length; i++) {
-    document.write(nombres[i] + "<br>");
-}
-
-// Recorrer con for...of
-
-/*for (let nombre of nombres) {
-    document.write(nombre + "<br>");
-}*/
-
-/* Agregar y eliminar elementos
+/*
+ Metodos más usados
 
 | Método    | Función          |
 | --------- | ---------------- |
@@ -50,27 +17,75 @@ for (let i = 0; i < nombres.length; i++) {
 | indexOf()  | Busca un elemento y devuelve su índice |
 | includes() | Verifica si un elemento existe en el array |
 
-let numeros = [2, 4, 6];
 
-numeros.unshift(1); // [1,2,4,6]
-numeros.shift();    // [2,4,6]*/
+// Agregar al final
+nombres.push("María");
+console.log("Después de agregar: " + nombres);
 
-if (nombres.includes("Ana")) {
-    document.write("Existe<br>");
+
+// Eliminar último
+nombres.pop();
+console.log("Después de eliminar: " + nombres);
+
+
+// Cambiar valor
+nombres[1] = "Carlos";
+console.log(`Después de cambiar: ${nombres}`);
+
+// Mostrar uno
+console.log(`Primer nombre: ${nombres[0]}`);
+
+//splice() - Agregar o eliminar en cualquier posición
+
+let frutas = ["manzana", "pera", "banano", "mango", "uva"];
+/*console.log(`Listado de frutas: ${frutas}`);
+frutas.splice(2, 0, "fresa", "kiwi");
+
+console.log(frutas);
+
+
+//slice() - Crear un nuevo array con una parte del original
+let subFrutas = frutas.slice(1, 4);
+console.log(`Array original: ${frutas}`);
+console.log(subFrutas);*/
+
+
+if (nombres.includes("Guillermo")) {
+    console.log("Existe Guillermo en el array");
+}else {
+    console.log("No existe Guillermo en el array");
 }
 
 
-let pos = nombres.indexOf("Luis");
+let pos = nombres.indexOf("Guillermo");
 
-document.write(pos);
+console.log(pos);
+
+/////////////////////////////////////////////////
+
+//### Operaciones básicas con arrays###
+
+//Tamaño
+
+console.log(nombres.length);
+
+// Recorrer con for
+/*for (let i = 0; i < nombres.length; i++) {
+    console.log(nombres[i]);
+}*/
+
+// Recorrer con for...of
+
+for (let nombre of nombres) {
+    console.log(nombre);
+}
 
 
-myArray = [3]
-myArray2 = new Array(3)
+let myArray = [3,2,1]
+let myArray2 = new Array(3)
 
 console.log(myArray) // [3]
-console.log(myArray2) // 3
-
+console.log(myArray2) // [undefined, undefined, undefined]
 
 
 
