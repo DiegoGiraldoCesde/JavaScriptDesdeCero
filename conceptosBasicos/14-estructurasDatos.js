@@ -1,4 +1,8 @@
+/*### Estructuras de datos: Arrays
 
+Un array es una estructura de datos que permite almacenar múltiples valores en una sola variable. Es una colección ordenada de elementos, donde cada elemento tiene un índice asociado que comienza en 0.
+
+*/
 let nombres = ["Ana", "Luis", "Pedro"];
 
 console.log(`Lista original: ${nombres}`);
@@ -87,5 +91,87 @@ let myArray2 = new Array(3)
 console.log(myArray) // [3]
 console.log(myArray2) // [undefined, undefined, undefined]
 
+
+/* 
+## Estructuras de datos: set
+
+Set (conjunto) es una colección de elementos. Set sólo puede contener elementos únicos. 
+Esto significa que no puede haber valores repetidos.
+
+Si intentas agregar un valor que ya existe, JavaScript lo ignora.
+
+Características principales de los Sets
+
+    No permiten valores duplicados
+
+    Mantienen el orden de inserción
+
+    Pueden almacenar cualquier tipo de dato
+
+    Permiten agregar, eliminar y verificar valores
+
+    Se usan mucho cuando necesitamos:
+
+    Eliminar duplicados
+
+    Verificar si un elemento ya existe
+
+    Manejar colecciones únicas
+*/
+
+
+//Como crear un Set
+
+let sinNada = new Set(); //Set vacio
+console.log(sinNada);
+
+//Set con valores iniciales
+let numeros = new Set([1, 2, 3, 4]);
+console.log(numeros);
+
+//## Métodos más importantes ##
+
+// .add() Agrega un valor al Set.
+
+
+let frutas = new Set();
+
+frutas.add("manzana");
+frutas.add("pera");
+frutas.add("naranja");
+
+
+// .has() Verifica si un valor existe en el Set.
+
+console.log(frutas.has("pera"));
+
+// .delete() Elimina un valor del Set.
+
+frutas.delete("naranja");
+console.log(frutas);
+
+// .size Propiedad que devuelve el número de elementos en el Set.
+
+console.log(frutas.size);
+
+// .clear() Elimina todos los elementos del Set.
+
+frutas.clear();
+console.log(frutas);
+
+//Ejemplo práctico: Eliminar duplicados de un array usando Set//Aquí paso el array a un Set 
+
+
+// Ejemplo práctico 2 (Verificar acceso)
+
+//Recorrer un Set
+
+//Podemos usar for...of.
+
+let colores = new Set(["rojo","verde","azul"]);
+
+for(let color of colores){
+    console.log(color);
+}
 
 
