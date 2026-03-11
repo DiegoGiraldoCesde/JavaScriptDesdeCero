@@ -51,7 +51,7 @@ console.log(frutas);
 //slice() - Crear un nuevo array con una parte del original
 let subFrutas = frutas.slice(1, 4);
 console.log(`Array original: ${frutas}`);
-console.log(subFrutas);*/
+console.log(subFrutas);
 
 
 if (nombres.includes("Guillermo")) {
@@ -76,7 +76,7 @@ console.log(nombres.length);
 // Recorrer con for
 /*for (let i = 0; i < nombres.length; i++) {
     console.log(nombres[i]);
-}*/
+}
 
 // Recorrer con for...of
 
@@ -95,7 +95,8 @@ console.log(myArray2) // [undefined, undefined, undefined]
 /* 
 ## Estructuras de datos: set
 
-Set (conjunto) es una colección de elementos. Set sólo puede contener elementos únicos. 
+Set (conjunto) es una colección de elementos. Set sólo puede contener
+ elementos únicos. 
 Esto significa que no puede haber valores repetidos.
 
 Si intentas agregar un valor que ya existe, JavaScript lo ignora.
@@ -117,7 +118,7 @@ Características principales de los Sets
     Verificar si un elemento ya existe
 
     Manejar colecciones únicas
-*/
+
 
 
 //Como crear un Set
@@ -140,10 +141,13 @@ frutas.add("manzana");
 frutas.add("pera");
 frutas.add("naranja");
 
+console.log(frutas);
+
 
 // .has() Verifica si un valor existe en el Set.
 
 console.log(frutas.has("pera"));
+
 
 // .delete() Elimina un valor del Set.
 
@@ -157,12 +161,33 @@ console.log(frutas.size);
 // .clear() Elimina todos los elementos del Set.
 
 frutas.clear();
-console.log(frutas);
+console.log(frutas);*/
 
-//Ejemplo práctico: Eliminar duplicados de un array usando Set//Aquí paso el array a un Set 
+//Ejemplo práctico: Eliminar duplicados de un array usando 
+// Set//Aquí paso el array a un Set 
+let numeros = [1, 2, 3, 2, 4, 1, 5];
+console.log(numeros);
+let sinRepetidos = new Set(numeros)
+console.log(sinRepetidos);
+
+let ArrayNumeros = Array.from(sinRepetidos);
+console.log(ArrayNumeros);
 
 
 // Ejemplo práctico 2 (Verificar acceso)
+
+
+let usuarios = new Set();
+
+usuarios.add("Ana");
+usuarios.add("Carlos");
+usuarios.add("Laura");
+
+if(usuarios.has("Nicol")){
+    console.log("Usuario autorizado");
+}else {
+    console.log("Usuario no autorizado");
+}
 
 //Recorrer un Set
 
@@ -174,4 +199,38 @@ for(let color of colores){
     console.log(color);
 }
 
+// ### Estructuras de datos: Map (Diccionario) ###
 
+/* Un Map es una estructura de datos que almacena información en pares clave → valor. Es una colección de elementos
+donde cada elemento tiene una clave única y un valor asociado. A diferencia de los objetos, 
+las claves en un Map pueden ser de cualquier tipo, incluyendo objetos, funciones o cualquier otro tipo de dato.
+
+
+        clave → valor
+        nombre → Juan
+        edad → 25
+        pais → Colombia
+
+Características principales de los Maps:
+
+    Permiten claves de cualquier tipo
+    Mantienen el orden de inserción
+    Pueden almacenar cualquier tipo de dato como valor
+    Permiten agregar, eliminar y verificar pares clave-valor
+    Se usan mucho cuando necesitamos:
+    Almacenar datos con claves no string
+    Mantener el orden de los elementos
+    Manejar colecciones de datos con claves únicas
+*/
+
+//Cómo crear un Map 
+let miMapa = new Map(); //Mapa vacío
+console.log(miMapa);
+
+//Mapa con valores iniciales
+let persona = new Map([
+    ["nombre", "Juan"],
+    ["edad", 30],
+    ["pais", "Colombia"]
+]);
+console.log(persona);
