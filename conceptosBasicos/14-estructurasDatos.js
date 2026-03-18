@@ -2,12 +2,12 @@
 
 Un array es una estructura de datos que permite almacenar múltiples valores en una sola variable. Es una colección ordenada de elementos, donde cada elemento tiene un índice asociado que comienza en 0.
 
-*/
+
 let nombres = ["Ana", "Luis", "Pedro"];
 
 console.log(`Lista original: ${nombres}`);
 
-/*
+
  Metodos más usados
 
 | Método    | Función          |
@@ -92,7 +92,7 @@ console.log(myArray) // [3]
 console.log(myArray2) // [undefined, undefined, undefined]
 
 
-/* 
+
 ## Estructuras de datos: set
 
 Set (conjunto) es una colección de elementos. Set sólo puede contener
@@ -129,6 +129,7 @@ console.log(sinNada);
 //Set con valores iniciales
 let numeros = new Set([1, 2, 3, 4]);
 console.log(numeros);
+console.log(numeros.size); //Tamaño del Set
 
 //## Métodos más importantes ##
 
@@ -146,7 +147,7 @@ console.log(frutas);
 
 // .has() Verifica si un valor existe en el Set.
 
-console.log(frutas.has("pera"));
+console.log(frutas.has("Luis"));
 
 
 // .delete() Elimina un valor del Set.
@@ -161,14 +162,16 @@ console.log(frutas.size);
 // .clear() Elimina todos los elementos del Set.
 
 frutas.clear();
-console.log(frutas);*/
+console.log(frutas);
 
 //Ejemplo práctico: Eliminar duplicados de un array usando 
 // Set//Aquí paso el array a un Set 
+*/
 let numeros = [1, 2, 3, 2, 4, 1, 5];
 console.log(numeros);
 let sinRepetidos = new Set(numeros)
 console.log(sinRepetidos);
+
 
 let ArrayNumeros = Array.from(sinRepetidos);
 console.log(ArrayNumeros);
@@ -183,12 +186,12 @@ usuarios.add("Ana");
 usuarios.add("Carlos");
 usuarios.add("Laura");
 
-if(usuarios.has("Nicol")){
+if(usuarios.has("Luisa")){
     console.log("Usuario autorizado");
 }else {
     console.log("Usuario no autorizado");
 }
-
+/*
 //Recorrer un Set
 
 //Podemos usar for...of.
@@ -201,9 +204,12 @@ for(let color of colores){
 
 // ### Estructuras de datos: Map (Diccionario) ###
 
-/* Un Map es una estructura de datos que almacena información en pares clave → valor. Es una colección de elementos
-donde cada elemento tiene una clave única y un valor asociado. A diferencia de los objetos, 
-las claves en un Map pueden ser de cualquier tipo, incluyendo objetos, funciones o cualquier otro tipo de dato.
+/* Un Map es una estructura de datos que almacena información en pares 
+clave → valor. Es una colección de elementos
+donde cada elemento tiene una clave única y un valor asociado. 
+A diferencia de los objetos, 
+las claves en un Map pueden ser de cualquier tipo, incluyendo objetos, 
+funciones o cualquier otro tipo de dato.
 
 
         clave → valor
@@ -221,7 +227,7 @@ Características principales de los Maps:
     Almacenar datos con claves no string
     Mantener el orden de los elementos
     Manejar colecciones de datos con claves únicas
-*/
+
 
 //Cómo crear un Map 
 let miMapa = new Map(); //Mapa vacío
@@ -233,4 +239,50 @@ let persona = new Map([
     ["edad", 30],
     ["pais", "Colombia"]
 ]);
+console.log(persona);   
+
+//Métodos más importantes
+
+// .set() Agrega o actualiza un par clave-valor en el Map.
+persona.set("profesion", "Ingeniero");
 console.log(persona);
+
+persona.set("profesion", "Panadero");
+console.log(persona);
+
+// .get() Obtiene el valor asociado a una clave.
+console.log(persona.get("nombre")); 
+
+console.log(persona.keys()) // Devuelve un iterable con las claves del Map
+// .has() Verifica si una clave existe en el Map.
+console.log(persona.has("edad"));
+
+// .delete() Elimina un par clave-valor del Map.
+persona.delete("pais");
+console.log(persona);
+
+// .size Propiedad que devuelve el número de pares clave-valor en el Map.
+console.log(persona.size);
+
+// .clear() Elimina todos los pares clave-valor del Map.
+persona.clear();
+console.log(persona);
+
+//Ejemplo con Map: Almacenar información de un producto
+
+let producto = new Map();
+
+producto.set("nombre","Laptop");
+producto.set("precio",2500);
+producto.set("stock",15);
+
+console.log(producto.get("precio"));
+
+for(let [clave, valor] of producto){
+    console.log(clave, valor);
+}
+
+/*
+// Claves Set → colección sin duplicados
+// Map → relación clave-valor
+*/
