@@ -1,21 +1,22 @@
 // Objeto en JavaScript
 // Un objeto es una colección de propiedades, 
-// donde cada propiedad es una asociación entre un nombre (clave) y un valor.
+// donde cada propiedad es una asociación entre un 
+// nombre (clave) y un valor.
 
 
 // Creación de un objeto -- Sintaxis
 
-let persona = {
+let persona ={
     nombre: "Diego",
     edad: 31,
-    ciudad: "Rionegro"
-};
+    ciudad: "Medellín"
+}
 
-
+/*
 // Acceso a las propiedades de un objeto
 
-console.log(persona.nombre); //Con notación de punto
-console.log(persona["edad"]); //Con notación de corchetes
+ console.log(persona.nombre)//Con notación de punto
+ console.log(persona["edad"]);//Con notación de corchetes
 
 // Modificación de las propiedades de un objeto
 persona.ciudad = "Rionegro";
@@ -33,9 +34,9 @@ console.log(persona.edad);
 
 
 // Verificar si una propiedad existe en un objeto
-console.log("nombre" in persona);
+console.log("edad" in persona);
 
-
+/*
 // Recorrer las propiedades de un objeto
 
 for (let propiedad of persona) {
@@ -48,12 +49,12 @@ for (let propiedad in persona) {
     console.log(propiedad + ": " + persona[propiedad]);
 }
 
-
+*/
 // Comparar objetos
 let persona2 = {
     nombre: "Diego",
     edad: 31,
-    ciudad: "Rionegro"
+    ciudad: "Medellín"
 };
 
 console.log(persona);
@@ -96,5 +97,7 @@ let persona3 = {
         puesto: "Desarrolladora"    
     }
 };
-console.log(persona3.trabajo.empresa);
-persona3.caminar(); // Hola, soy Ana y estoy caminando.
+console.log(persona3.trabajo.puesto);
+
+/*
+persona3.caminar(); // Hola, soy Ana y estoy caminando.*/

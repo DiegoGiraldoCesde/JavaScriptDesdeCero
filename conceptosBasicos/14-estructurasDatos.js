@@ -166,8 +166,8 @@ console.log(frutas);
 
 //Ejemplo práctico: Eliminar duplicados de un array usando 
 // Set//Aquí paso el array a un Set 
-*/
-let numeros = [1, 2, 3, 2, 4, 1, 5];
+
+ numeros = [1, 2, 3, 2, 4, 1, 5];
 console.log(numeros);
 let sinRepetidos = new Set(numeros)
 console.log(sinRepetidos);
@@ -191,7 +191,7 @@ if(usuarios.has("Luisa")){
 }else {
     console.log("Usuario no autorizado");
 }
-/*
+
 //Recorrer un Set
 
 //Podemos usar for...of.
@@ -201,6 +201,7 @@ let colores = new Set(["rojo","verde","azul"]);
 for(let color of colores){
     console.log(color);
 }
+
 
 // ### Estructuras de datos: Map (Diccionario) ###
 
@@ -228,7 +229,7 @@ Características principales de los Maps:
     Mantener el orden de los elementos
     Manejar colecciones de datos con claves únicas
 
-
+*/
 //Cómo crear un Map 
 let miMapa = new Map(); //Mapa vacío
 console.log(miMapa);
@@ -251,7 +252,8 @@ persona.set("profesion", "Panadero");
 console.log(persona);
 
 // .get() Obtiene el valor asociado a una clave.
-console.log(persona.get("nombre")); 
+console.log(persona.get("edad")); 
+
 
 console.log(persona.keys()) // Devuelve un iterable con las claves del Map
 // .has() Verifica si una clave existe en el Map.
