@@ -2,7 +2,6 @@
 // Las clases en JavaScript son una forma de crear objetos
 //  y manejar la herencia de manera más sencilla 
 // y estructurada.
-
 /*
 
 ## Qué es un objeto ##
@@ -24,17 +23,16 @@ valores".
 Me permite reutilizar una extructura.
 
 Instancias-- usar ese objeto
-*/
 
+*/
 
 //Cómo defino una clase (sintaxis) 
 
 class Persona {
-     
-    constructor(nombre, edad) {   //El constructor es un método especial que me permite definir la estructura de mi clase.
+         constructor(nombre, edad, ciudad) {   //El constructor es un método especial que me permite definir la estructura de mi clase.
         this.nombre = nombre;
         this.edad = edad;
-        
+        this.ciudad = ciudad;
     }   
     saludar() {
         console.log("Hola, mi nombre es " + this.nombre + " y tengo " + this.edad + " años.");
@@ -44,11 +42,13 @@ class Persona {
 
 // Creación de una instancia de la clase (crear un objeto a partir de la clase)
 
-
+/*
 let juanPersona = new Persona("Juan", 30);
 
-console.log(juanPersona.edad)
+console.log(juanPersona.nombre); // Juan
 juanPersona.saludar()
+
+
 juanPersona.nombre = "Juan Pérez"; // Modificar la propiedad nombre
 juanPersona.profesion = "Ingeniero"; // Agregar una nueva propiedad profesion
 console.log(juanPersona.nombre);
@@ -67,10 +67,17 @@ class Persona2 {
         
     }   
     saludar() {
-        console.log("Hola, mi nombre es " + this.nombre + " y tengo " + this.edad);
-    }
+        console.log("oe mi nombre es " + this.nombre)
     
 }
+}
+
+let persona2 = new Persona2(); // Si no le paso ningún argumento, se usarán los valores por defecto.
+persona2.saludar() // oe mi nombre es usuario
+console.log(persona2.edad) // la edad justa
+console.log(persona2.nombre) // usuario
+
+
 
 //acceder a las propiedades de la clase
 
@@ -98,7 +105,7 @@ class Persona3 {
 //Persona3.pago() // No se puede acceder a la propiedad privada desde fuera de la clase
 
 //Para poder acceder a las propiedades privadas deberiamos crear metodos setters y getters.
-
+*/
 
 class Persona4 {
     #nombre //propiedad privada
@@ -128,6 +135,7 @@ class Persona4 {
 let persona4 = new Persona4("Maria", 28, "123456789");
 console.log(persona4.getNombre()); // Maria
 console.log(persona4.cuentaBancaria); // 123456789
+
 persona4.cuentaBancaria = "987654321";
 console.log(persona4.cuentaBancaria); // 987654321
 
@@ -156,15 +164,13 @@ console.log(Matematica.restar(5, 3)); // 2
 
 class Estudiante extends Persona {
     constructor(nombre, edad, carrera) {
-        super(nombre, edad);
+        super(nombre, edad); // Llamo al constructor de la clase padre para inicializar las propiedades heredadas
         this.carrera = carrera;
     }
     estudiar() {
         console.log("Hola, mi nombre es " + this.nombre + " y estudio " + this.carrera);
     }
-    saludar() {
-        console.log("Hola, mi nombre es " + this.nombre + " y estudio " + this.carrera); // Sobrescribo el método saludar de la clase Persona
-    }
+    
 }
 
 
@@ -173,6 +179,8 @@ class Estudiante extends Persona {
 let estudiante1 = new Estudiante("Ana", 25, "Ingeniería de Sistemas");
 estudiante1.saludar(); 
 estudiante1.estudiar(); 
+
+
 
 // Ejercicio práctico
 

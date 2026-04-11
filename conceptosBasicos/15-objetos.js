@@ -12,10 +12,10 @@ let persona ={
     ciudad: "Medellín"
 }
 
-/*
+
 // Acceso a las propiedades de un objeto
 
- console.log(persona.nombre)//Con notación de punto
+ console.log(persona.nombre) //Con notación de punto
  console.log(persona["edad"]);//Con notación de corchetes
 
 // Modificación de las propiedades de un objeto
@@ -36,7 +36,7 @@ console.log(persona.edad);
 // Verificar si una propiedad existe en un objeto
 console.log("edad" in persona);
 
-/*
+
 // Recorrer las propiedades de un objeto
 
 for (let propiedad of persona) {
@@ -49,7 +49,7 @@ for (let propiedad in persona) {
     console.log(propiedad + ": " + persona[propiedad]);
 }
 
-*/
+
 // Comparar objetos
 let persona2 = {
     nombre: "Diego",

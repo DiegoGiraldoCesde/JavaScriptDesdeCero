@@ -1,119 +1,95 @@
 // Desestructuración y propagación
+//La desestructuración es una forma de desempaquetar arrays y objetos 
+// y asignarlos a una variable distinta.
+
+/*
+Crear un Array
+
+Como accedemos a los elementos de un Array?
+Si quiero guardarlo en una variable cada elemento?
 
 
-let myArray = [1, 2, 3, 4]
+Desesctructurar el array
+// Desestructuración sintaxis
 
+
+// Sintaxis arrays con valores predeterminados
+
+Que pasa si necesito un valor que no está en un array?
+
+por eso podemos ponerlo por defecto
+
+
+
+// Ignorar elementos array
+uso comas donde quiero ignorarlo
+
+// Sintaxis objectos
+
+*/
 let person = {
     name: "Diego",
     age: 37,
     alias: "DiegoGiraldo"
 }
-
-let myValue = myArray[1]
-console.log(myValue)
-
-let myName = person.name
-console.log(myName)
-
-// Desestructuración
-
-// Sintaxis arrays
-
-let [myValue0, myValue1, myValue2, myValue3, myValue4] = myArray
-console.log(myValue0)
-console.log(myValue1)
-console.log(myValue2)
-console.log(myValue3)
-console.log(myValue4)
-
-// Sintaxis arrays con valores predeterminados
-
-let [myValue5 = 0, myValue6 = 0, myValue7 = 0, myValue8 = 0, myValue9 = 0] = myArray
-console.log(myValue5)
-console.log(myValue6)
-console.log(myValue7)
-console.log(myValue8)
-console.log(myValue9)
-
-// Ignorar elementos array
-
-let [myValue10, , , myValue13] = myArray
-console.log(myValue10)
-console.log(myValue13)
-
-// Sintaxis objects
-
-let { name, age, alias } = person
-console.log(name)
-console.log(age)
-console.log(alias)
+/*
 
 // Sintaxis objects con valores predeterminados
 
-let { name2, age2, alias2, email = "email@email.com" } = person
-console.log(name2) // No existe
-console.log(age2)  // No existe
-console.log(alias2)  // No existe
-console.log(email)
+**cada valor tiene que venir asociado al mismo nombre de la clave
 
 // Sintaxis objects con nuevos nombres de variables
+y si quiero ponerle un nuevo nombre a la variable?
 
-let { alias: alias3, name: name3, age: age3 } = person
-console.log(name3)
-console.log(age3)
-console.log(alias3)
 
 // Objects anidados
 
-let person3 = {
-    name: "Diego",
-    age: 37,
-    alias: "DiegoGiraldo",
-    walk: function () {
-        console.log("La persona camina.")
-    },
-    job: {
-        name: "Programador",
-        exp: 15,
-        work: function () {
-            console.log(`La persona de ${this.age} años de experiencia trabaja.`)
-        }
-    }
+
+
+
+// Desestructuración durante la iteración
+
+const countries = [
+  ["Finland", "Helsinki"],
+  ["Sweden", "Stockholm"],
+  ["Norway", "Oslo"],
+];
+
+
+
+function saludar({ nombre, edad }) {
+  console.log(`Hola ${nombre}, tienes ${edad}`);
 }
 
-let { name: name4, job: { name: jobName } } = person3
+saludar({
+  nombre: "Carlos",
+  edad: 28
+});
 
-console.log(name4)
-console.log(jobName)
-
-// Propagación (...)
+// Propagación-Spread (...)
 
 // Sintaxis arrays
+// creo dos arrays
 
-let myArray2 = [...myArray, 5, 6]
 
-console.log(myArray2)
+puedo sumar valores adicionales a un array
+
 
 // Copia de arrays
 
-let myArray3 = [...myArray]
+let myArray3 = 
 
-console.log(myArray3)
+
 
 // Combinación de arrays
 
-let myArray4 = [...myArray, ...myArray2, ...myArray3]
-
-console.log(myArray4)
-
 // Sintaxis objects
 
-let person4 = { ...person, email: "dgiraldoza@cesde.net" }
-
-console.log(person4)
 
 // Copia de objects
 
-let person5 = { ...person }
 
-console.log(person5)
+
+//spred en funciones flecha
+
+*/

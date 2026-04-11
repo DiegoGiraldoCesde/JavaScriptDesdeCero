@@ -32,7 +32,7 @@
 // 8. Modifica la clase con getters y setters para que use propiedades privadas
 // 9. Utiliza los get y set y muestra sus valores
 // 10. Sobrescribe un método de una clase que utilice herencia y haz uso de super para llamar al método original
-
+                                                                                                            
 // Retos
 // 1. Crea una clase llamada "Libro" con las siguientes propiedades: título, autor, año de publicación y género. 
     // Luego, crea un método dentro de la clase que imprima una descripción completa del libro utilizando sus propiedades.
