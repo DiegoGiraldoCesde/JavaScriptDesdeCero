@@ -2,6 +2,22 @@
 
 // if (si)
 
+let num = 3;
+if (num > 0) {
+  console.log(`${num} es un número positivo`);
+} else {
+  console.log(`${num} es un número negativo`);
+}
+//  3 es un número positivo
+
+num = -3;
+if (num > 0) {
+  console.log(`${num} es un número positivo`);
+} else {
+  console.log(`${num} es un número negativo`);
+}
+// -3 es un número negativo
+
 let edad = 37
 
 if (edad == 37) {
@@ -66,7 +82,26 @@ else {
     console.log("No puedo comer")
 }
 
+
+let a = 0;
+if (a > 0) {
+  console.log(`${a} es un número positivo`);
+} else if (a < 0) {
+  console.log(`${a} es un número negativo`);
+} else if (a == 0) {
+  console.log(`${a} es cero`);
+} else {
+  console.log(`${a} no es un número`);
+}
+
 // ## switch ##
+
+//Switch es una alternativa para if else if else else. La instrucción switch comienza con una palabra 
+// clave switch seguida de un paréntesis y un bloque de código. 
+// Dentro del bloque de código tendremos diferentes casos. El bloque de casos se ejecuta si el valor 
+// en el paréntesis de la declaración de cambio coincide con el valor del caso. La declaración de break es para 
+// terminar la ejecución. Esto para que la ejecución del código se detenga después de que se cumpla la condición.
+//  El bloque default se ejecuta si todos los casos no cumplen la condición.
 
 let dia = 9
 let nombreDia

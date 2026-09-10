@@ -12,7 +12,7 @@ console.log(a % b) // Módulo
 console.log(a ** b) // Exponente
 
 
-// Operadores unarios
+// Operadores unarios // operador que actúa sobre un solo operando (un único valor o variable) para producir un resultado.
 
 //Post-incremento: usa el valor (5) y LUEGO lo incrementa (a=6)
 console.log(a++); // Muestra: 5 
